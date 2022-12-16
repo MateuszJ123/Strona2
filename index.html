@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="pl">
+  <head>
+      <meta charset="utf-8">
+      <title>Learning js</title>
+  </head>
+  <body>
+      <div id="div-id-1">Text tag: div</div>
+      <p id="demo"></p>
+      <script>
+        //alert('Dobry dzien');
+        //console.log("I am console your browser, hello!");
+        //prompt("Jak masz na imię?");
+		
+		document.getElementById("div-id-1").innerHTML  += "<div style='color: blue;'>It is add innerHtml</div>";
+		
+        document.write("I am func write in DOM");
+        document.write("<h4>I am func write in DOM</h4>");
+
+        function write(word)
+          {
+            document.write(word);
+          }
+
+        write("<h1>Hello</h1>");
+        write("<br>");
+        write("<p>World</p>");
+        write("<br>");
+
+        document.getElementById("div-id-1");
+        document.getElementById("div-id-1").style.color = "red";
+        document.getElementById("div-id-1").style.fontSize = "30px";
+
+        //wariable
+        const num = 1.45;
+        const str="string new";
+        const bool=true;
+        console.log(num);
+        console.log(str);
+        console.log(bool);
+
+        const x=10;
+        const y=1;
+        const sum = x+y;
+        console.log(sum);
+        
+      </script>
+  </body>
+</html>
+
