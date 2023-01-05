@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <title>Learning js</title>
   </head>
-  <body>
+	<body>
       <div id="div-id-1">Text tag: div</div>
       <p id="demo"></p>
       <script>
@@ -43,7 +43,28 @@
         const y=1;
         const sum = x+y;
         console.log(sum);
-        
+		
+		function summXiY (x,y){
+			return x+y;
+		}
+		
+		document.write("<p>Summ - </p>" + summXiY (100,800));
+		
+		
+		function roznicaXiY (x,y){
+			return x-y;
+		}
+		
+		document.write("<h3>roznica - </h3>" + roznicaXiY (100,800));
+		
+		
+		function myFunktion(){
+			document.getElementById("demo").innerHTML = "We clicked";
+			document.getElementById("div-id-1").style.color = "yellow";
+			document.getElementById("div-id-1").style.fontSize = "50px";
+			}
+			
+			document.addEventListener("click", myFunktion);
       </script>
   </body>
 </html>
