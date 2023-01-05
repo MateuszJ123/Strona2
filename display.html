@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="pl">
+  <head>
+      <meta charset="utf-8">
+      <title>Learning js</title>
+  </head>
+	<body>
+		<script>
+     
+	 function displayNone() {
+		document.getElementById("div-id-1").style.display = "none";
+	}
+		
+	function displayBlock() {
+		document.getElementById("div-id-1").style.display = "block";
+	}
+	
+	const elOn = document.getElementById("elOn");
+	elOn.addActionListener("click", displayBlock);
+	
+		const elOff = document.getElementById("elOff");
+	elOn.addActionListener("click", displayNone);
+			
+      </script>
+  </body>
+</html>
+
